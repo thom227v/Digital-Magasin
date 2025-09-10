@@ -1,73 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Demeris Dealer - Your one-stop shop for the most extravagant toy cars."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>DD</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id="site-title">Demeris Dealer</h1>
+      <section id="header-section">
+        <h1 id="site-title"><a href="#hero-section">Demeris Dealer</a></h1>
         <nav id="header-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Categories.html">Categories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <button id="menu-toggle" class="burger" aria-label="Toggle menu" aria-controls="myLinks" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="myLinks">
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#about-section">About Demeris</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
         </nav>
-        <section id="hero-section">
-            <h2>Welcome to Demeris Dealer</h2>
-            <img src="images/hero-car.webp" title="Toy car">
-        </section>
+      </section>
+
+      <section id="hero-section">
+        <h2>Welcome to Demeris Dealer</h2>
+        <img src="images/hero-car.webp" title="Toy car" />
+      </section>
     </header>
 
     <main>
-        <div class="grid-page-section">
-            <figure id="main-image">
-                <img src="images/car4.png" title="Toy car">
-                <figcaption>The new Speedster 3000</figcaption>
-            </figure>
-    
-            <aside id="product-details">
-                <h2>Car Details</h2>
-                <ul>
-                    <li>Price: $129.000</li>
-                    <li>Brand: Demeris</li>
-                    <li>Model: Speedster 3000</li>
-                    <li>Weight: 5 ton</li>
-                    <li>Height: 4 meters</li>
-                    <li>Width: 2 meters</li>
-                    <li>Material: Plastic</li>
-                    <li>Top speed: 750 km/h</li>
-                    <li>Battery: Requires 2 AA batteries (not included)</li>
-                    <li>Features: Remote control, lights, sounds</li>
-                </ul>
-            </aside>
-        </div>
+      <section id="product" class="grid-page-section">
+        <figure id="main-image">
+          <img src="images/car4.png" title="Toy car" />
+          <figcaption>The new Speedster 3000</figcaption>
+        </figure>
 
+        <aside id="product-details">
+          <h2>Car Details</h2>
+          <ul>
+            <li>Price: $129 000</li>
+            <li>Brand: Demeris</li>
+            <li>Model: Speedster 3000</li>
+            <li>Weight: 5 ton</li>
+            <li>Height: 4 meters</li>
+            <li>Width: 2 meters</li>
+            <li>Material: Plastic</li>
+            <li>Top speed: 750 km/h</li>
+            <li>Battery: Requires 2 AA batteries (not included)</li>
+            <li>Features: Remote control, lights, sounds</li>
+          </ul>
+        </aside>
+      </section>
 
-        <article class="text-section beige">
-            <h2>Speedster 3000</h2>
-            <p>The Demeris Speedster 3000 isn’t just a car—it’s a statement of futuristic absurdity wrapped in glossy plastic. Towering at an incredible four meters in height and weighing a staggering five tons, this machine somehow manages to deliver a mind-bending top speed of 750 km/h—all powered by nothing more than two humble AA batteries (not included, of course).</p>
-        </article>
+      <article class="text-section">
+        <h2>Speedster 3000</h2>
+        <p>
+          The Demeris Speedster 3000 isn't just a car — it's a statement of
+          futuristic absurdity wrapped in glossy plastic. Towering at an
+          incredible four meters in height and weighing a staggering five tons,
+          this machine somehow manages to deliver a mind-bending top speed of
+          750 km/h—all powered by nothing more than two humble AA batteries (not
+          included, of course).
+        </p>
+      </article>
 
-        <article class="half lightgrey">
-            <figure>
-                <img src="images/factory.jpg" title="Factory">
-                <figcaption>Factory of where the Speedster 3000 is made</figcaption>
-            </figure>
-        </article>
+      <section id="about-section" class="grid-page-section">
+        <p>
+          Demeris Technology has always been less about practicality and more
+          about spectacle. <br />
+          Founded by eccentric inventor Cassian Demeris in the late 21st
+          century, the company began as a boutique workshop crafting
+          experimental machines that blurred the line between toys and titans.
+          <br />
+          Where other brands pursued efficiency and safety, Demeris embraced
+          audacity — constructing vehicles that defied engineering norms,
+          powered by unlikely energy sources, and built from materials better
+          suited to playgrounds than racetracks.
+        </p>
 
+        <figure id="factory-image">
+          <img src="images/factory.jpg" title="Factory" />
+          <figcaption>Factory of where the Speedster 3000 is made</figcaption>
+        </figure>
+      </section>
 
-
+      <article class="text-section">
+        <h2>Pre order</h2>
+        <input type="text" placeholder="Enter your email to pre-order" />
+        <button type="submit">Pre-order Now</button>
+      </article>
     </main>
-    <footer>
-        <p>&copy; 2025 DIGITAL MAGASIN. All rights reserved.</p>
-        <p>Contact us at <a href="mailto:61174@sde.edu.dk">61174@sde.edu.dk</a></p>
-    </footer>
+    <footer id="footer">
+      <section>
+        <article class="footer-article">
+          <h2>Follow us</h2>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </article>
 
-    <br>    <br>    <br>    <br>    <br>    <br>    <br><br>    <br>    <br>    <br>    <br>    <br>    <br><br>    <br>    <br>    <br>    <br>    <br>    <br>
-</body>
+        <article class="footer-article">
+          <h2>Contact us</h2>
+          <ul>
+            <li>Phone: +45 12 34 56 78</li>
+            <li>
+              Email: <a href="mailto:61194@sde.edu.dk">61194@edu.sde.dk</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="footer-article">
+          <h2>Address</h2>
+          <ul>
+            <li>1234 Toy Lane</li>
+            <li>Playtown, PT 56789</li>
+            <li>Country: Funland</li>
+          </ul>
+        </article>
+      </section>
+      <p>&copy; 2025 DEMERIS DEALER. All rights reserved.</p>
+    </footer>
+    <script>
+      // Toggle the mobile navigation menu (visible only under 600px)
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        var btn = document.getElementById("menu-toggle");
+        var isOpen = x.style.display === "block";
+        x.style.display = isOpen ? "none" : "block";
+        if (btn) btn.setAttribute("aria-expanded", (!isOpen).toString());
+      }
+
+      (function () {
+        var btn = document.getElementById("menu-toggle");
+        if (btn) btn.addEventListener("click", myFunction);
+
+        // Close menu after clicking a link (mobile)
+        var links = document.querySelectorAll('#myLinks a[href^="#"]');
+        links.forEach(function (a) {
+          a.addEventListener('click', function () {
+            var menu = document.getElementById('myLinks');
+            var toggle = document.getElementById('menu-toggle');
+            if (menu && getComputedStyle(toggle).display !== 'none') {
+              menu.style.display = 'none';
+              toggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+
+        // Set CSS variable for header offset to account for fixed header on mobile
+        function setHeaderOffset() {
+          var header = document.getElementById('header-section');
+          var toggle = document.getElementById('menu-toggle');
+          // Only apply when burger is visible (mobile breakpoint)
+          if (header && toggle && getComputedStyle(toggle).display !== 'none') {
+            var h = header.getBoundingClientRect().height;
+            document.documentElement.style.setProperty('--header-offset', h + 'px');
+          } else {
+            document.documentElement.style.setProperty('--header-offset', '0px');
+          }
+        }
+        setHeaderOffset();
+        window.addEventListener('resize', setHeaderOffset);
+      })();
+    </script>
+  </body>
 </html>
