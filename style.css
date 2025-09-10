@@ -341,6 +341,7 @@ footer section {
   footer p {
     text-align: center;
   }
+  
 }
 
 @media screen and (max-width: 760px) {
@@ -434,6 +435,9 @@ footer section {
     text-align: center;
     background-color: #c3c0f0;
   }
+
+
+  
   #hero-section h2 {
     font-size: 2rem;
     padding: 0.6em 0;

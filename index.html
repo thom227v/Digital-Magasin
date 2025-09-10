@@ -131,7 +131,7 @@
       <p>&copy; 2025 DEMERIS DEALER. All rights reserved.</p>
     </footer>
     <script>
-      // Toggle the mobile navigation menu (visible only under 600px)
+      // Toggle the mobile navigation menu (visible only under 760px)
       function myFunction() {
         var x = document.getElementById("myLinks");
         var btn = document.getElementById("menu-toggle");
@@ -161,12 +161,20 @@
         function setHeaderOffset() {
           var header = document.getElementById('header-section');
           var toggle = document.getElementById('menu-toggle');
+          var menu = document.getElementById('myLinks');
           // Only apply when burger is visible (mobile breakpoint)
           if (header && toggle && getComputedStyle(toggle).display !== 'none') {
             var h = header.getBoundingClientRect().height;
             document.documentElement.style.setProperty('--header-offset', h + 'px');
           } else {
             document.documentElement.style.setProperty('--header-offset', '0px');
+            // Ensure menu is visible again on desktop by clearing inline styles
+            if (menu) {
+              menu.style.display = '';
+            }
+            if (toggle) {
+              toggle.setAttribute('aria-expanded', 'false');
+            }
           }
         }
         setHeaderOffset();

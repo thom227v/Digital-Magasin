@@ -1,0 +1,8 @@
+
+bedre responsive **
+
+:before, ::after på preorder
+
+ændre font / tekst farve
+
+hover på billeder viser title
