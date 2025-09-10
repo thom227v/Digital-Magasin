@@ -27,11 +27,11 @@ main {
   grid-gap: 5rem;
 }
 
-.grid-page-section > :nth-child(1) {
+.grid-page-section> :nth-child(1) {
   justify-self: end;
 }
 
-.grid-page-section > :nth-child(2) {
+.grid-page-section> :nth-child(2) {
   justify-self: start;
 }
 
@@ -41,7 +41,7 @@ main {
   font-size: 3rem;
   margin: 20px 0;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-  1px 1px 0 black;
+    1px 1px 0 black;
   user-select: none;
   cursor: pointer;
 }
@@ -92,9 +92,11 @@ main {
   0% {
     color: rgb(0, 0, 0);
   }
+
   50% {
     color: rgb(60, 60, 60);
   }
+
   100% {
     color: rgb(120, 120, 120);
   }
@@ -155,7 +157,7 @@ figcaption {
   background-color: #747cbd;
   padding: 4rem;
   font-family: "Arial", sans-serif;
-  height: 50%;
+  height: auto;
   max-width: 600px;
   width: 50%;
   align-self: center;
@@ -165,6 +167,15 @@ figcaption {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #c9ce9f;
+  list-style: none;
+}
+
+#product-details ul {
+  padding-left: 0;
+}
+
+#product-details li::before {
+  content: "🚗 ";
 }
 
 #product-details h2 {
@@ -239,7 +250,34 @@ figcaption {
 }
 
 .text-section button:hover {
-  background-color: #eaff29;
+  border-color: #333;
+  box-shadow: 0 0 8px #fff;
+  transform: scale(1.05);
+  color: #000;
+  font-weight: bold;
+  animation: button-hover 0.1s infinite;
+}
+
+@keyframes button-hover {
+  0% {
+    background-color: #ffffff;
+    transform: scale(1.05);
+
+  }
+
+  50% {
+    background-color: #e5ff00;
+    transform: scale(1.15);
+  }
+
+  100% {
+    background-color: #ffffff;
+    transform: scale(1.05);
+  }
+}
+
+.text-section button:focus {
+  border-color: #333;
 }
 
 .text-section input:active,
@@ -258,7 +296,6 @@ figcaption {
 
 footer {
   background-color: #979bc7;
-  height: 30vh;
 }
 
 footer section {
@@ -307,8 +344,8 @@ footer section {
     grid-gap: 2rem;
   }
 
-  .grid-page-section > :nth-child(1),
-  .grid-page-section > :nth-child(2) {
+  .grid-page-section> :nth-child(1),
+  .grid-page-section> :nth-child(2) {
     justify-self: center;
   }
 
@@ -341,14 +378,15 @@ footer section {
   footer p {
     text-align: center;
   }
-  
+
 }
 
 @media screen and (max-width: 760px) {
+
   /* Prevent anchor targets from being hidden behind fixed header */
   html {
     scroll-behavior: smooth;
-  scroll-padding-top: var(--header-offset);
+    scroll-padding-top: var(--header-offset);
   }
 
   /* Add top margin for scroll positioning of targets */
@@ -356,8 +394,9 @@ footer section {
   #product,
   #about-section,
   #footer {
-  scroll-margin-top: var(--header-offset);
+    scroll-margin-top: var(--header-offset);
   }
+
   /* Header layout for mobile */
   #header-nav {
     justify-content: space-between;
@@ -436,8 +475,6 @@ footer section {
     background-color: #c3c0f0;
   }
 
-
-  
   #hero-section h2 {
     font-size: 2rem;
     padding: 0.6em 0;
