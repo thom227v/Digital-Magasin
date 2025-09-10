@@ -140,11 +140,37 @@ main {
   padding: 4rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
+  position: relative;
 }
 
 #main-image img {
   height: auto;
   display: block;
+  transition: filter 0.3s ease-in, transform 0.3s ease-in;
+}
+
+#main-image img:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-family: "Arial", sans-serif;
+}
+
+#main-image:hover .hover-text {
+  opacity: 1;
 }
 
 figcaption {
@@ -203,6 +229,37 @@ figcaption {
   padding: 4rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  position: relative;
+}
+
+#factory-image img {
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease-in, transform 0.3s ease-in;
+}
+
+#factory-image img:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+#factory-image .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#factory-image:hover .hover-text {
+  opacity: 1;
 }
 
 .text-section {
